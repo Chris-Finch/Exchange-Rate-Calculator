@@ -36,7 +36,18 @@ p {
 }
 
 .money-img {
-  width: 150px;
+  width: 250px;
+  transform: rotate(0deg);
+  animation: roll 20s infinite;
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .currency {
@@ -85,8 +96,8 @@ button:focus {
   outline: 0;
 }
 
-@media(max-width: 600px) {
-    .currency input {
-        width: 200px;
-    }
+@media (max-width: 600px) {
+  .currency input {
+    width: 200px;
+  }
 }
