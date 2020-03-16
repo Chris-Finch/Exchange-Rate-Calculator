@@ -37,7 +37,7 @@ p {
 
 .money-img {
   width: 250px;
-  -webkit-animation: rotation 20s infinite linear;
+  -webkit-animation: rotation 25s infinite linear;
 }
 
 @-webkit-keyframes rotation {
