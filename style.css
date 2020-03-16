@@ -37,16 +37,15 @@ p {
 
 .money-img {
   width: 250px;
-  transform: rotate(0deg);
-  animation: roll 20s infinite;
+  -webkit-animation: rotation 20s infinite linear;
 }
 
-@keyframes roll {
-  0% {
-    transform: rotate(0);
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
   }
-  100% {
-    transform: rotate(360deg);
+  to {
+    -webkit-transform: rotate(359deg);
   }
 }
 
